@@ -1,4 +1,4 @@
-/* Global styles */
+/* Typography */
 
 @font-face {
     font-family: "DM Serif Display";
@@ -44,6 +44,12 @@ body {
     font-family: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background-color: #fff;
     font-variant-ligatures: contextual common-ligatures;
+}
+
+/* Horizontally centering fixed-width block
+   used together with .mx-auto */
+.w-700 {
+    width: 724px;
 }
 
 /* Fix jumping scrollbar when switching to long pages */
