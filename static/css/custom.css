@@ -1,25 +1,33 @@
 /* Global styles */
 
 @font-face {
-    font-family: "Fira GO";
-    src: url("fonts/FiraGO-Regular.woff2") format("woff2");
+    font-family: "DM Serif Display";
+    src: url("fonts/dm-serif-display-v11-latin-regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
 }
 
 @font-face {
-    font-family: "Fira GO";
-    src: url("fonts/FiraGO-Italic.woff2") format("woff2");
+    font-family: "Source Sans 3";
+    src: url("fonts/SourceSans3-Regular.otf.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "Source Sans 3";
+    src: url("fonts/SourceSans3-It.otf.woff2") format("woff2");
     font-weight: 400;
     font-style: italic;
     font-stretch: normal;
 }
 
 @font-face {
-    font-family: "Fira GO";
-    src: url("fonts/FiraGO-SemiBold.woff2") format("woff2");
-    font-weight: 600;
+    font-family: "Source Sans 3";
+    src: url("fonts/SourceSans3-Bold.otf.woff2") format("woff2");
+    font-weight: 700;
     font-style: normal;
     font-stretch: normal;
 }
@@ -33,10 +41,9 @@
 }
 
 body {
-    font-family: "Fira GO", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background-color: #fff;
     font-variant-ligatures: contextual common-ligatures;
-    font-feature-settings: "ss05";
 }
 
 /* Fix jumping scrollbar when switching to long pages */
@@ -46,7 +53,7 @@ html {
     margin-right: 0;
 }
 
-/* link */
+/* Link */
 
 a {
     color: #212529;
@@ -69,7 +76,7 @@ a:focus {
     text-decoration-color: #6c757d;
 }
 
-/* button */
+/* Button */
 
 .btn-outline-primary {
     color: #212529;
@@ -80,13 +87,6 @@ a:focus {
     color: #FFFFFF;
     background-color: #6c757d;
     border-color: #6c757d;
-}
-
-/* author */
-
-author {
-    font-weight: 600;
-    text-decoration: none;
 }
 
 /* landing content */
@@ -112,7 +112,7 @@ hr {
     margin-bottom: 1rem;
 }
 
-/* selection color */
+/* Selection color */
 
 /* ::-moz-selection {
     background-color: #6c757d;
@@ -144,8 +144,9 @@ hr {
 }
 
 .header h1.name {
+    font-family: "DM Serif Display", Georgia, Cambria, "Times New Roman", Times, serif;
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-left: 7px;
 }
 
@@ -174,7 +175,7 @@ hr {
     text-decoration: none;
 }
 
-/* Partial: Content */
+/* Partial: content */
 
 .content h1,
 h2,
@@ -182,7 +183,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 600;
+    font-family: "DM Serif Display", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 400;
     color: #212529;
     margin-bottom: 1rem;
 }
@@ -248,7 +250,7 @@ h6 {
     margin: auto;
 }
 
-/* blog post typography */
+/* Blog post typography */
 
 .content .blog-post-title {
     font-size: 2rem;
@@ -260,7 +262,7 @@ h6 {
     line-height: 1.75;
 }
 
-/* centered, boxed blog post images */
+/* Blog post images: centered, boxed */
 
 .content .figure img {
     display: block;
@@ -276,7 +278,7 @@ h6 {
 }
 
 .content .markdown code {
-    /* enclosed by single backtick (`) */
+    /* Enclosed by single backtick (`) */
     color: #212529;
     padding: .2em .4em;
     margin: 0;
@@ -301,7 +303,7 @@ h6 {
 
 .content .markdown pre code,
 .content .markdown pre output {
-    /* enclosed by 4 backticks (````) */
+    /* Enclosed by 4 backticks (````) */
     padding: 0;
     font-size: 0.75rem;
     line-height: 20px;
@@ -326,8 +328,9 @@ h6 {
 }
 
 .content .groupby {
+    font-family: "DM Serif Display", Georgia, Cambria, "Times New Roman", Times, serif;
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 2rem;
     margin-bottom: 0.75rem;
     color: #212529;
@@ -363,13 +366,13 @@ h6 {
     height: 16px;
 }
 
-/* Partial: Utterances Comments */
+/* Partial: Utterances comments */
 
 .comments {
     max-width: 100%;
 }
 
-/* Partial: Footer */
+/* Partial: footer */
 
 .footer {
     font-weight: 400;
