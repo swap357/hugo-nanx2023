@@ -98,7 +98,7 @@ a:focus {
 /* landing content */
 
 .landing {
-    font-size: 1.125rem;
+    font-size: 1.15625rem;
     line-height: 1.75;
 }
 
@@ -146,12 +146,12 @@ hr {
 }
 
 .header .logo {
-    max-height: 100px;
+    max-height: 116px;
 }
 
 .header h1.name {
     font-family: "DM Serif Display", Georgia, Cambria, "Times New Roman", Times, serif;
-    font-size: 2.5rem;
+    font-size: 2.625rem;
     font-weight: 400;
     margin-left: 7px;
 }
@@ -234,7 +234,7 @@ h6 {
 }
 
 .content .caption {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #6c757d;
     text-align: center;
     margin-top: 0.625rem;
@@ -259,12 +259,12 @@ h6 {
 /* Blog post typography */
 
 .content .blog-post-title {
-    font-size: 2rem;
+    font-size: 2.25rem;
     line-height: 1.25;
 }
 
 .content .blog-post-content {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.75;
 }
 
@@ -438,6 +438,6 @@ a:focus {
 
 @media (max-width: 767.98px) {
     html {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
