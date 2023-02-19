@@ -208,11 +208,11 @@ h6 {
 }
 
 .content h4 {
-    font-size: 1rem;
+    font-size: 1.125rem;
 }
 
 .content .meta {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 400;
     color: #6c757d;
     margin-bottom: 1rem;
@@ -234,7 +234,7 @@ h6 {
 }
 
 .content .caption {
-    font-size: 1rem;
+    font-size: 1.125rem;
     color: #6c757d;
     text-align: center;
     margin-top: 0.625rem;
@@ -382,7 +382,7 @@ h6 {
 
 .footer {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.125rem;
 }
 
 .footer a {
