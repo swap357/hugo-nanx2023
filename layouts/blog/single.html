@@ -62,14 +62,14 @@
                 {{ if .Site.Params.posts_navigation }}
                 <div class="navigation">
                     <div class="row">
-                        <div class="mx-auto w-700">
+                        <div class="col-sm-12 col-lg-6">
                             {{ if .PrevInSection }}
                             <div class="mt-4 text-start">
                                 <a href="{{ .PrevInSection.Permalink }}">« {{ .PrevInSection.Title }}</a>
                             </div>
                             {{ end }}
                         </div>
-                        <div class="mx-auto w-700">
+                        <div class="col-sm-12 col-lg-6">
                             {{ if .NextInSection }}
                             <div class="mt-4 text-end">
                                 <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} »</a>
