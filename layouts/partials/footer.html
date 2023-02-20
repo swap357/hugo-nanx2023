@@ -39,7 +39,7 @@
                 {{ end }}
             </div>
         </div>
-        <div class="row justify-content-center mt-1 mb-5">
+        <div class="row justify-content-center mt-2 mb-5">
             <div class="mx-auto w-700">
                 <div class="site-social">
                     <ul>
@@ -51,27 +51,24 @@
                         <li><a href="https://github.com/{{ .Site.Params.github }}" target="_blank" rel="noopener">
                                 <svg class="svg-icon mr-1">
                                     <use xlink:href="#github"></use>
-                                </svg>
-                                GitHub</a></li>
+                                </svg> @{{ .Site.Params.github }}</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.gitlab }}
                         <li><a href="https://gitlab.com/{{ .Site.Params.gitlab }}" target="_blank"
-                                rel="noopener">GitLab</a></li>
+                                rel="noopener"> @{{.Site.Params.gitlab }}</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.medium }}
                         <li><a href="https://medium.com/@{{ .Site.Params.medium }}" target="_blank"
-                                rel="noopener">Medium</a></li>
+                                rel="noopener"> @{{.Site.Params.medium }}</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.twitter }}
                         <li><a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank" rel="noopener">
                                 <svg class="svg-icon mr-1">
                                     <use xlink:href="#twitter"></use>
-                                </svg>
-                                Twitter
-                            </a></li>
+                                </svg> @{{ .Site.Params.twitter }}</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.linkedin }}
@@ -79,8 +76,7 @@
                                 rel="noopener">
                                 <svg class="svg-icon mr-1">
                                     <use xlink:href="#linkedin"></use>
-                                </svg>
-                                LinkedIn</a></li>
+                                </svg> @{{ .Site.Params.linkedin }}</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.colophon }}
