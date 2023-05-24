@@ -55,13 +55,13 @@
                         {{ end }}
 
                         {{ if .Site.Params.gitlab }}
-                        <li><a href="https://gitlab.com/{{ .Site.Params.gitlab }}" target="_blank"
-                                rel="noopener"> @{{.Site.Params.gitlab }}</a></li>
+                        <li><a href="https://gitlab.com/{{ .Site.Params.gitlab }}" target="_blank" rel="noopener"></a>
+                            @{{.Site.Params.gitlab }}</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.medium }}
-                        <li><a href="https://medium.com/@{{ .Site.Params.medium }}" target="_blank"
-                                rel="noopener"> @{{.Site.Params.medium }}</a></li>
+                        <li><a href="https://medium.com/@{{ .Site.Params.medium }}" target="_blank" rel="noopener">
+                                @{{.Site.Params.medium }}</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.twitter }}
@@ -87,8 +87,8 @@
                                 Colophon</a></li>
                         {{ end }}
 
-                        {{ if .Site.RSSLink }}
-                        <li><a href="{{ .Site.RSSLink }}" class="mr-0">
+                        {{ with .OutputFormats.Get "RSS" }}
+                        <li><a href="{{ .Permalink }}" class="mr-0">
                                 <svg class="svg-icon mr-1">
                                     <use xlink:href="#rss-fill"></use>
                                 </svg>
