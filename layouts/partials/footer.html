@@ -57,17 +57,17 @@
                         <li><a href="https://github.com/{{ .Site.Params.github }}" target="_blank" rel="noopener">
                                 <svg class="svg-icon mr-1">
                                     <use xlink:href="#github"></use>
-                                </svg> @{{ .Site.Params.github }}</a></li>
+                                </svg> GitHub</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.gitlab }}
-                        <li><a href="https://gitlab.com/{{ .Site.Params.gitlab }}" target="_blank" rel="noopener"></a>
-                            @{{.Site.Params.gitlab }}</a></li>
+                        <li><a href="https://gitlab.com/{{ .Site.Params.gitlab }}" target="_blank"
+                                rel="noopener"></a>GitLab</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.medium }}
-                        <li><a href="https://medium.com/@{{ .Site.Params.medium }}" target="_blank" rel="noopener">
-                                @{{.Site.Params.medium }}</a></li>
+                        <li><a href="https://medium.com/@{{ .Site.Params.medium }}" target="_blank"
+                                rel="noopener">Medium</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.linkedin }}
@@ -75,21 +75,21 @@
                                 rel="noopener">
                                 <svg class="svg-icon mr-1">
                                     <use xlink:href="#linkedin"></use>
-                                </svg> @{{ .Site.Params.linkedin }}</a></li>
+                                </svg> LinkedIn</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.mastodon_link }}
                         <li><a href="{{ .Site.Params.mastodon_link }}" target="_blank" rel="noopener">
                                 <svg class="svg-icon mr-1">
                                     <use xlink:href="#mastodon"></use>
-                                </svg> @{{ .Site.Params.mastodon_username }}</a></li>
+                                </svg> Mastodon</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.twitter }}
                         <li><a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank" rel="noopener">
                                 <svg class="svg-icon mr-1">
                                     <use xlink:href="#twitter"></use>
-                                </svg> @{{ .Site.Params.twitter }}</a></li>
+                                </svg> Twitter</a></li>
                         {{ end }}
 
                         {{ if .Site.Params.colophon }}
