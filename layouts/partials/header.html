@@ -17,9 +17,10 @@
                         </a>
 
                         <ul class="nav nav-primary">
+                            {{ $currentPath := .RelPermalink }}
                             {{ range .Site.Menus.primary.ByWeight }}
                             <li class="nav-item">
-                                <a class="nav-link{{ if .Identifier }} text-{{ .Identifier }}{{ end }}"
+                                <a class="nav-link{{ if .Identifier }} text-{{ .Identifier }}{{ end }}{{ if or (eq .URL $currentPath) (strings.HasPrefix $currentPath .URL) }} active{{ end }}"
                                     href="{{ .URL }}">
                                     {{ .Pre }}
                                     {{ .Name }}
