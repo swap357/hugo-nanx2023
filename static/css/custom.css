@@ -48,8 +48,7 @@
     --tw-prose-captions: #64748b;
     --tw-prose-counters: #64748b;
     --tw-prose-code: #0f172a;
-    --tw-prose-pre-bg: #f9fafb;
-    --tw-prose-pre-border: #f3f4f6;
+    --tw-prose-pre-bg: #f6f8fa;
     --tw-prose-bullets: #cbd5e1;
     --tw-prose-hr: #e2e8f0;
     --tw-prose-quotes: #0f172a;
@@ -416,7 +415,7 @@ h6 {
 .content .markdown pre {
     font-family: var(--tw-prose-font-monospace);
     font-weight: 400;
-    background-color: var(--tw-prose-pre-bg);
+    background-color: var(--tw-bg);
     font-feature-settings: normal;
 }
 
@@ -440,7 +439,7 @@ h6 {
     white-space: pre;
     word-break: break-all;
     word-wrap: break-word;
-    border: 1px solid var(--tw-prose-pre-border);
+    border: 1px solid var(--tw-prose-bullets);
     border-radius: 6px;
 }
 
@@ -450,7 +449,7 @@ h6 {
     padding: 0;
     font-size: 14px;
     line-height: 24px;
-    background-color: var(--tw-prose-pre-bg);
+    background-color: var(--tw-bg);
     border-radius: 0;
 }
 
