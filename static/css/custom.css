@@ -1,27 +1,27 @@
 /* Typography */
 
 @font-face {
-    font-family: 'STIX Two Text';
-    src: url('fonts/STIXTwoText-VariableFont_wght.woff2') format('woff2');
+    font-family: "STIX Two Text";
+    src: url("fonts/STIXTwoText-VariableFont_wght.woff2") format("woff2");
     font-weight: 400 700;
 }
 
 @font-face {
-    font-family: 'STIX Two Text';
-    src: url('fonts/STIXTwoText-Italic-VariableFont_wght.woff2') format('woff2');
+    font-family: "STIX Two Text";
+    src: url("fonts/STIXTwoText-Italic-VariableFont_wght.woff2") format("woff2");
     font-style: italic;
     font-weight: 400 700;
 }
 
 @font-face {
-    font-family: 'Libre Franklin';
-    src: url('fonts/LibreFranklin-VariableFont_wght.woff2') format('woff2');
+    font-family: "Libre Franklin";
+    src: url("fonts/LibreFranklin-VariableFont_wght.woff2") format("woff2");
     font-weight: 100 900;
 }
 
 @font-face {
-    font-family: 'Libre Franklin';
-    src: url('fonts/LibreFranklin-Italic-VariableFont_wght.woff2') format('woff2');
+    font-family: "Libre Franklin";
+    src: url("fonts/LibreFranklin-Italic-VariableFont_wght.woff2") format("woff2");
     font-style: italic;
     font-weight: 100 900;
 }
@@ -65,8 +65,7 @@ body {
     background-color: var(--tw-bg);
 }
 
-/* Horizontally centering fixed-width block
-   used together with .mx-auto */
+/* Horizontally centering fixed-width block used together with .mx-auto */
 .w-700 {
     width: 724px;
 }
@@ -114,7 +113,7 @@ a:focus {
     border-color: var(--tw-prose-links-hover);
 }
 
-/* landing content */
+/* Landing content */
 
 .landing {
     font-size: 1rem;
@@ -125,7 +124,7 @@ a:focus {
     margin-bottom: 0;
 }
 
-/* horizontal rule */
+/* Horizontal rule */
 
 hr {
     border-top: 1px solid var(--tw-prose-hr);
@@ -268,7 +267,7 @@ hr {
     display: none;
 }
 
-/* nav on < medium screens */
+/* Navigation on < medium screens */
 @media (max-width: 767.98px) {
     .header .logo {
         max-height: 160px;
@@ -630,7 +629,7 @@ a:focus {
     fill: var(--tw-prose-links-hover);
 }
 
-/* < medium screens */
+/* Screens < medium */
 
 @media (max-width: 767.98px) {
     html {
