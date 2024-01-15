@@ -21,8 +21,8 @@
 
 @font-face {
     font-family: "IBM Plex Mono";
-    src: url("fonts/IBMPlexMono-Regular.woff2") format("woff2");
-    font-weight: 400;
+    src: url("fonts/IBMPlexMono-Text.woff2") format("woff2");
+    font-weight: 450;
     font-style: normal;
     font-stretch: normal;
 }
@@ -407,7 +407,7 @@ h6 {
 .content .markdown code,
 .content .markdown pre {
     font-family: var(--tw-prose-font-monospace);
-    font-weight: 400;
+    font-weight: 450;
     background-color: var(--tw-bg);
     font-feature-settings: normal;
 }
