@@ -60,25 +60,47 @@
                 </div>
 
                 {{ if .Site.Params.posts_navigation }}
-                <div class="navigation">
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-6">
+                <nav class="pagination-nav mt-4 mb-3" aria-label="Blog post navigation">
+                    <div class="row navigation-btns">
+                        <div class="col">
                             {{ if .PrevInSection }}
-                            <div class="mt-4 text-start">
-                                <a href="{{ .PrevInSection.Permalink }}">« {{ .PrevInSection.Title }}</a>
+                            <a href="{{ .PrevInSection.Permalink }}" class="btn btn-outline-nav btn-equal-height btn-prev w-100">
+                                <div class="btn-content">
+                                    <div class="pagination-nav-sublabel">Previous</div>
+                                    <div class="pagination-nav-label">« {{ .PrevInSection.Title }}</div>
+                                </div>
+                            </a>
+                            {{ else }}
+                            <div class="btn btn-equal-height btn-prev w-100 invisible">
+                                <div class="btn-content">
+                                    <div class="pagination-nav-sublabel">Previous</div>
+                                    <div class="pagination-nav-label">Placeholder</div>
+                                </div>
                             </div>
                             {{ end }}
                         </div>
-                        <div class="col-sm-12 col-lg-6">
+
+                        <div class="col">
                             {{ if .NextInSection }}
-                            <div class="mt-4 text-end">
-                                <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} »</a>
+                            <a href="{{ .NextInSection.Permalink }}" class="btn btn-outline-nav btn-equal-height btn-next w-100">
+                                <div class="btn-content">
+                                    <div class="pagination-nav-sublabel">Next</div>
+                                    <div class="pagination-nav-label">{{ .NextInSection.Title }} »</div>
+                                </div>
+                            </a>
+                            {{ else }}
+                            <div class="btn btn-equal-height btn-next w-100 invisible">
+                                <div class="btn-content">
+                                    <div class="pagination-nav-sublabel">Next</div>
+                                    <div class="pagination-nav-label">Placeholder</div>
+                                </div>
                             </div>
                             {{ end }}
                         </div>
                     </div>
-                </div>
+                </nav>
                 {{ end }}
+
             </div>
         </div>
     </div>
