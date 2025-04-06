@@ -17,16 +17,16 @@
 
 @font-face {
     font-display: swap;
-    font-family: "Inter Variable";
-    src: url("fonts/InterVariable.woff2") format("woff2");
-    font-weight: 100 900;
+    font-family: "Instrument Sans";
+    src: url("fonts/InstrumentSans-VF.woff2") format("woff2");
+    font-weight: 400 700;
 }
 
 @font-face {
     font-display: swap;
-    font-family: "Inter Variable";
-    src: url("fonts/InterVariable-Italic.woff2") format("woff2");
-    font-weight: 100 900;
+    font-family: "Instrument Sans";
+    src: url("fonts/InstrumentSans-Italic-VF.woff2") format("woff2");
+    font-weight: 400 700;
     font-style: italic;
 }
 
@@ -40,7 +40,7 @@
 /* Colors derived from @tailwindcss/typography prose-slate */
 
 :root {
-    --tw-prose-font-sans-serif: "Inter Variable", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --tw-prose-font-sans-serif: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --tw-prose-font-serif: "Wittgenstein", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --tw-prose-font-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
     --tw-prose-body: #334155;
@@ -63,7 +63,8 @@
 
 body {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
+    font-variation-settings: "wdth" 97.5;
     font-variant-ligatures: contextual common-ligatures;
     background-color: var(--tw-bg);
 }
@@ -182,11 +183,9 @@ hr {
 
 .header ul.nav li {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
-    font-variation-settings: "opsz" 24;
-    letter-spacing: -0.02em;
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.375rem;
 }
 
 .header ul.nav li a {
@@ -213,27 +212,25 @@ hr {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: var(--tw-prose-headings);
-    text-underline-offset: 16.5px;
+    text-underline-offset: 15.5px;
 }
 
 @supports (-webkit-text-decoration-skip: ink) {
     .header ul.nav li a.active {
-        text-underline-offset: 17px;
+        text-underline-offset: 16px;
     }
 }
 
 @supports (-moz-text-decoration-skip-ink: auto) {
     .header ul.nav li a.active {
-        text-underline-offset: 16.5px;
+        text-underline-offset: 16px;
     }
 }
 
 @media (max-width: 767.98px) {
     .header ul.nav li a.active {
         font-family: var(--tw-prose-font-sans-serif);
-        font-feature-settings: "cv10";
-        font-variation-settings: "opsz" 24;
-        letter-spacing: -0.02em;
+        font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
         font-weight: 700;
         text-decoration: none;
     }
@@ -319,9 +316,7 @@ h6 {
 
 .content .meta {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
-    font-variation-settings: "opsz" 20;
-    letter-spacing: normal;
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
     font-weight: 500;
     font-size: 1.25rem;
     color: var(--tw-prose-lead);
@@ -346,10 +341,8 @@ h6 {
 
 .content .markdown {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
-    font-variation-settings: "opsz" 24;
-    letter-spacing: -0.02em;
-    font-weight: 425;
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
+    font-weight: 450;
     font-size: 1.125rem;
     line-height: calc(30 / 18);
     color: var(--tw-prose-body);
@@ -382,11 +375,9 @@ dl {
 
 .content .blog-post-content {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
-    font-variation-settings: "opsz" 24;
-    letter-spacing: -0.02em;
-    font-weight: 425;
-    font-size: 1.25rem;
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
+    font-weight: 450;
+    font-size: 1.1875rem;
     line-height: calc(30 / 18);
 }
 
@@ -396,10 +387,8 @@ dl {
 
 .content .blog-post-content ol li p {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
-    font-variation-settings: "opsz" 24;
-    letter-spacing: -0.02em;
-    font-weight: 425;
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
+    font-weight: 450;
 }
 
 /* Blog post images: centered, boxed */
@@ -525,9 +514,7 @@ dl {
 
 .content .post-item .meta-title {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
-    font-variation-settings: "opsz" 15;
-    letter-spacing: -0.02em;
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
     font-weight: 500;
     font-size: 0.9375rem;
     line-height: 2.5rem;
@@ -535,11 +522,9 @@ dl {
 
 .content .post-item .meta-date {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
-    font-variation-settings: "opsz" 14;
-    letter-spacing: -0.02em;
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
     font-weight: 450;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 2.5rem;
     font-variant-numeric: tabular-nums;
     color: var(--tw-prose-counters);
@@ -565,9 +550,7 @@ dl {
 
 .content .tags li a {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
-    font-variation-settings: "opsz" 14;
-    letter-spacing: -0.02em;
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
     font-weight: 500;
     font-size: 0.875rem;
     line-height: calc(50 / 18);
@@ -590,10 +573,8 @@ dl {
 /* Tags page */
 .content .taxonomy-term {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
-    font-variation-settings: "opsz" 24;
-    letter-spacing: -0.02em;
-    font-weight: 425;
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
+    font-weight: 450;
     font-size: 1.25rem;
     margin-bottom: 1.125rem;
 }
@@ -631,10 +612,8 @@ dl {
 
 .pagination-nav .btn-outline-nav {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
-    font-variation-settings: "opsz" 16;
-    letter-spacing: -0.02em;
-    font-weight: 425;
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
+    font-weight: 450;
     font-size: 1rem;
     text-decoration: none;
     border: 1px solid var(--tw-prose-bullets);
@@ -656,9 +635,7 @@ dl {
 
 .pagination-nav .pagination-nav-sublabel {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
-    font-variation-settings: "opsz" 16;
-    letter-spacing: -0.02em;
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
     font-weight: 600;
     font-size: 1rem;
     color: var(--tw-prose-captions);
@@ -681,10 +658,8 @@ dl {
 
 .footer {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "cv10";
-    font-variation-settings: "opsz" 18;
-    letter-spacing: -0.02em;
-    font-weight: 425;
+    font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
+    font-weight: 450;
     font-size: 1.125rem;
 }
 
